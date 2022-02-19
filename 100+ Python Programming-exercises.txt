@@ -17,10 +17,118 @@ Solution
 
 #----------------------------------------#
 Question 1
-Level 1
+Level 1(Functions with Arguments)
 
 Question:
-WAP to check if a given number is even or not
+WAP to check whether a program is even or not ?
 
-Hints: 
+Hints: Use mod to check
 
+solution:
+
+num = int(input("Enter the number you want to check -> "))
+
+def even(num):
+    if num % 2 == 0:
+        print(f"{num} is an even number")
+    else:
+        print(f"{num} is not an even number")
+        
+even(num)        
+
+#......................................................#
+
+#......................................................#
+
+Question 2
+Level 1 (Function with Argument)
+
+Question:
+WAP to check a number is odd or not
+
+Hints: use mod
+
+Solution:
+
+num = int(input("Enter a number to check whether it is odd or not -> "))
+
+def odd(num):
+    if num % 2 != 0:
+        print(f"{num} is an odd number")
+    else:
+        print(f"{num} is not an odd number")
+        
+odd(num)    
+
+#.................................................#
+
+#.................................................#
+
+Question 3
+Level 1  (Function with Argument)
+
+Question:
+WAP to find a factorial of a number
+
+Hints: use a loop
+
+Solution:
+
+num = int(input("Enter a number to find out its factorial -> "))
+
+def factorial(num):
+    fact = 1
+    while num > 0:
+        fact *= num
+        num -= 1
+    print(f"Factorial of {num} is {fact}")    
+
+factorial(num)        
+
+#..............................................#
+
+#..............................................#
+
+Question 4
+Level 1(Function using Argument)
+
+Question:
+WAP to print a table of a number
+
+Hint: Using a loop
+
+Solution:
+
+num1 = int(input("Enter the number whose table you want to print -> "))
+num2 = int(input("Enter upto which number you want the multiplication -> "))
+
+def table(num1, num2):
+    for i in range(1, num2 + 1, 1):
+        print(f"{num1} * {i} = {num1 * i}")
+        
+table(num1, num2)        
+
+#...........................................#
+
+#...........................................#
+
+Question 5
+Level 1(Function with Argument)
+
+Question:
+WAP to find a x to the power of n
+
+Hint: Use Loop
+
+Solution:
+
+x = int(input("Enter the base number -> "))
+n = int(input("Enter the power which you want to raise to the base -> "))
+
+def power_of(x, n):
+    power = 1
+    for i in range(n):
+        power *= x
+    print(f"{x} to the power of {n} is {power}")    
+
+power_of(x,n)
